@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
     />
   </head>
+
   <body class="body">
     <main>
       <section class="section">
@@ -25,8 +26,12 @@
               ></div>
 
               <div class="search">
-                <span class="material-symbols-outlined"> search </span> Хайлт
-                хийх
+                <span class="material-symbols-outlined"> search </span>
+                <input
+                  class="search-input"
+                  type="text"
+                  placeholder="Хайлт хийх"
+                />
               </div>
               <div
                 style="padding-left: 550px; display: flex; align-items: center"
@@ -96,23 +101,17 @@
         </div>
       </section>
       <div style="background-color: black; height: 320px; width: auto">
-        <div
-          style="
-            display: flex;
-            padding-top: 80px;
-
-            justify-content: center;
-            gap: 30px;
-          "
-        >
+        <div class="hero-images"
+          
+              >
           <div
-            class="hero-image"
+            class="hero-image-item"
             style="background-image: url(Figure\ [uk-overlay].png)"
           ></div>
-          <div class="hero-image" style="background-image: url(1.png)"></div>
-          <div class="hero-image" style="background-image: url(2.png)"></div>
-          <div class="hero-image" style="background-image: url(3.png)"></div>
-          <div class="hero-image" style="background-image: url(4.png)"></div>
+          <div class="hero-image-item" style="background-image: url(1.png)"></div>
+          <div class="hero-image-item" style="background-image: url(2.png)"></div>
+          <div class="hero-image-item" style="background-image: url(3.png)"></div>
+          <div class="hero-image-item" style="background-image: url(4.png)"></div>
         </div>
       </div>
       <div style="background-color: #fafafa; height: 4000px">
@@ -258,72 +257,28 @@
           <img src="Div [cover] (3).png" />
         </div>
         <div style="display: flex">
-          <div
-            style="
-              width: 350px;
-              height: 62px;
-              color: blue;
-              display: flex;
-              justify-content: flex-start;
-              align-items: center;
-              margin-left: 300px;
-              margin-top: 100px;
-              border-bottom: blue solid;
-            "
-          >
-            Өнгөрсөн 7 хоногт
-          </div>
-          <div
-            style="
-              width: 350px;
-              height: 62px;
-              color: #888888;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin-top: 100px;
-              border-bottom: #888888 solid;
-            "
-          >
-            09/30 - 10/06
-          </div>
-          <div
-            style="
-              width: 600px;
-              height: 62px;
-              color: #888888;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin-top: 100px;
-              border-bottom: #888888 solid;
-            "
-          >
-            09/23 - 09/29
-          </div>
-          <div
-            style="
-              width: 350px;
-              height: 62px;
-              color: #888888;
-              display: flex;
-              justify-content: flex-end;
-              align-items: center;
-              margin-top: 100px;
-              border-bottom: #888888 solid;
-            "
-          >
-            09/16 - 09/22
-          </div>
+          <div class="mid-tab start">Өнгөрсөн 7 хоногт</div>
+          <div class="mid-tab center">09/30 - 10/06</div>
+          <div class="mid-tab center">09/23 - 09/29</div>
+          <div class="mid-tab end">09/16 - 09/22</div>
+        </div>
+        <div style="display: grid;grid-template-columns:400px 500px;grid-template-rows:400px 500px;gap: 30px;">
+        <div style="grid-row: 1/3;grid-column: 1/3;"><img src="Figure [uk-overlay] (11).png" alt=""></div>
+        <div style="grid-row: 2/2; grid-column: 1/1;"><img src="Figure [uk-overlay] (12).png" alt=""></div>
+        <div><img src="Figure [uk-overlay] (13).png" alt=""></div>
+        <div><img src="Figure [uk-overlay] (14).png" alt=""></div>
+        <div><img src="Figure [uk-overlay] (15).png" alt=""></div>
+        <div><img src="Figure [uk-overlay] (16).png" alt=""></div>
+        <div><img src="Figure [uk-overlay] (17).png" alt=""></div>
         </div>
       </div>
     </main>
-    <div style="height: 1000px; background-color: black">
+    <div style="height: 1500px; background-color: black">
       <div style="padding-left: 120px">
         <div
           style="
-            width: 1600px;
-            height: 1000px;
+            width: 2000px;
+            height: 900px;
             padding-left: 150px;
             padding-top: 130px;
           "
@@ -331,24 +286,33 @@
           <div style="display: flex">
             <div>
               <div><img src="unreadlogo.png" alt="" /></div>
-              <div
-                style="
-                  width: 600px;
-                  height: 200px;
-                  border-radius: 20px;
-                  background-color: white;
-                  margin-top: 100px;
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                  padding-right: 20px;
-                "
-              >
+              <div class="footer-section">
                 <div style="position: relative; left: 30px">
                   <p style="font-size: 20px; color: #888888">
                     Хамтран ажиллах хүсэлт илгээх
                   </p>
-                  <p style="font-size: 24px; color: pink">Контент нийтлүүлэх</p>
+                  <p style="font-size: 24px; color: white">
+                    Контент нийтлүүлэх
+                  </p>
+                </div>
+
+                <div
+                  style="
+                    width: 80px;
+                    height: 80px;
+                    background-color: black;
+                    border-radius: 100%;
+                  "
+                ></div>
+              </div>
+              <div class="footer-section">
+                <div style="position: relative; left: 30px">
+                  <p style="font-size: 20px; color: #888888">
+                    Хамтран ажиллах хүсэлт илгээх
+                  </p>
+                  <p style="font-size: 24px; color: white">
+                    Эвент дээр хамтрах
+                  </p>
                 </div>
                 <div
                   style="
@@ -359,71 +323,175 @@
                   "
                 ></div>
               </div>
-              <div
-                style="
-                  width: 600px;
-                  height: 200px;
-                  border-radius: 20px;
-                  background-color: white;
-                  margin-top: 100px;
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                  padding-right: 20px;
-                "
-              >
-                <div style="position: relative; left: 30px">
-                  <p style="font-size: 20px; color: #888888">
-                    Хамтран ажиллах хүсэлт илгээх
-                  </p>
-                  <p style="font-size: 24px; color: pink">Контент нийтлүүлэх</p>
+              <div style="display: flex; gap: 20px">
+                <div style="margin-top: 60px">
+                  <a
+                    href="https://apps.apple.com/us/app/unread-an-rss-reader/id1363637349"
+                    target="_blank"
+                    style="width: 150px; height: 50px"
+                    ><img src="Image (1).png"
+                  /></a>
                 </div>
-                <div
-                  style="
-                    width: 80px;
-                    height: 80px;
-                    background-color: black;
-                    border-radius: 100%;
-                  "
-                ></div>
+                <div style="margin-top: 60px">
+                  <a
+                    href="https://apps.apple.com/us/app/unread-an-rss-reader/id1363637349"
+                    target="_blank"
+                    style="width: 150px; height: 50px"
+                    ><img src="Image (2).png"
+                  /></a>
+                </div>
               </div>
             </div>
-            <div
-              style="
-                border: #888888 solid;
-                width: 800px;
-                margin-left: 300px;
-                display: flex;
-              "
-            >
-              <div style="color: #fafafa; font-size: 20px">
+            <div style="width: 1600px; margin-left: 300px">
+              <div style="color: #fafafa; font-size: 20px; display: flex">
                 Редакцын бодлого
-              </div>
-              <div
-                style="
-                  display: flex;
-                  width: 60px;
-                  height: 20px;
-                  justify-content: center;
-                  align-items: center;
-                  padding-left: 10px;
-                  padding-top: 2px;
-                  gap: 10px;
-                "
-              >
                 <div
                   style="
-                    width: 8px;
-                    height: 6px;
-                    background-color: white;
-                    border-radius: 100%;
+                    display: flex;
+                    width: 60px;
+                    height: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 10px;
+                    padding-top: 2px;
+                    gap: 10px;
                   "
-                ></div>
-                <div style="color: #fafafa; font-size: 20px">Блог</div>
+                >
+                  <div
+                    style="
+                      width: 6px;
+                      height: 6px;
+                      background-color: white;
+                      border-radius: 100%;
+                    "
+                  ></div>
+                  <div style="color: #fafafa; font-size: 20px">Блог</div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    width: 150px;
+                    height: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 10px;
+                    padding-top: 2px;
+                    gap: 10px;
+                  "
+                >
+                  <div
+                    style="
+                      width: 6px;
+                      height: 6px;
+                      background-color: white;
+                      border-radius: 100%;
+                    "
+                  ></div>
+                  <div style="color: #fafafa; font-size: 20px">Ажлын байр</div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    width: 150px;
+                    height: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 10px;
+                    padding-top: 2px;
+                    gap: 10px;
+                  "
+                >
+                  <div
+                    style="
+                      width: 6px;
+                      height: 6px;
+                      background-color: white;
+                      border-radius: 100%;
+                    "
+                  ></div>
+                  <div style="color: #fafafa; font-size: 20px">Холбогдох</div>
+                </div>
+              </div>
+              <div style="font-size: 13px; color: grey; padding-top: 100px">
+                © 2015-2024 Анрид Медиа ХХК. Бүх эрх хуулиар хамгаалагдсан.
+                Контентуудыг
+              </div>
+              <div style="font-size: 13px; color: grey">
+                зөвшөөрөлгүйгээр болон дурдалгүйгээр нийтлэх, хэвлэх, эш татахыг
+                хориглоно
+              </div>
+              <div style="margin-top: 80px; display: flex">
+                <ul style="list-style-type: none">
+                  <li style="font-size: 18px; color: blue; line-height: 40px">
+                    Булангууд
+                  </li>
+                  <li class="footer-li">Онцлох бизнес</li>
+                  <li class="footer-li">Techworm</li>
+                  <li class="footer-li">Би хэрхэн ажилладаг вэ?</li>
+                  <li class="footer-li">Мэдүүштэй</li>
+                  <li class="footer-li">Чөлөөт</li>
+                  <li class="footer-li">Номын тухай</li>
+                  <li class="footer-li">7 хоногийн тойм</li>
+                  <li class="footer-li">Өртөөлөгчид</li>
+                </ul>
+                <ul style="list-style-type: none; padding-left: 100px">
+                  <li style="font-size: 18px; color: black; line-height: 40px">
+                    Булангууд
+                  </li>
+                  <li class="footer-li">Тогтвортой хөгжил</li>
+                  <li class="footer-li">Тайлбарлах нь</li>
+                  <li class="footer-li">10 ертөнц, 10 өнцөг</li>
+                  <li class="footer-li">Таатай оффис</li>
+                  <li class="footer-li">Зочинтой булан</li>
+                  <li class="footer-li">8 минутын улс төр</li>
+                  <li class="footer-li">English</li>
+                </ul>
+                <ul style="list-style-type: none; padding-left: 100px">
+                  <li style="font-size: 18px; color: blue; line-height: 40px">
+                    Компани
+                  </li>
+                  <li class="footer-li">Улаанбаатар 14240</li>
+                  <li class="footer-li">СБД, 8-р хороо, Амарын</li>
+                  <li class="footer-li">гудамж</li>
+                  <li class="footer-li">Тэнгэрлиг медиа групп</li>
+                  <li class="footer-li">+976 9921 2778</li>
+                  <li class="footer-li">+976 8801 3893</li>
+                  <li style="line-height: 60px; color: grey">Зочлох:</li>
+                  <li style="font-size: 16px; line-height: 40px; color: white">
+                    www.unread.media
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div
+        style="
+          width: 1800px;
+          display: flex;
+          justify-content: space-between;
+          margin-left: 300px;
+        "
+      >
+        <a href="https://www.facebook.com/UnreadToday/"
+          ><img src="Icon.png"
+        /></a>
+        <a href="https://x.com/UnreadToday"><img src="Vector (3).png" /></a>
+        <a href="https://www.instagram.com/unreadtoday/"
+          ><img src="Icon (1).png"
+        /></a>
+        <a href="https://www.linkedin.com/company/unreadmedia"
+          ><img src="Icon (2).png"
+        /></a>
+        <a href="https://www.youtube.com/channel/UCfJkXzS4l7Rbq5rRgvHdsKw"
+          ><img src="Icon (3).png"
+        /></a>
+        <a href="https://soundcloud.com/unreadtoday"
+          ><img src="Layer 2.png"
+        /></a>
+       
+        </svg>
       </div>
     </div>
   </body>

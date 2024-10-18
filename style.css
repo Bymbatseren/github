@@ -44,6 +44,16 @@ header {
   height: 30px;
   color: grey;
   gap: 5px;
+  padding-left: 10px;
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+}
+.search-input:focus {
+  background-color: transparent;
+  border: none;
 }
 .header-text {
   color: grey;
@@ -99,7 +109,15 @@ header {
   background-color: aliceblue;
   border-radius: 50px;
 }
-.hero-image {
+.hero-images {
+  display: flex;
+  padding-top: 80px;
+
+  justify-content: center;
+  gap: 30px;
+}
+
+.hero-image-item {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -108,7 +126,7 @@ header {
   width: 260px;
   height: 400px;
 }
-.hero-image:hover {
+.hero-image-item:hover {
   width: 280px;
 }
 
@@ -192,4 +210,48 @@ header {
   margin-left: 1600px;
   display: flex;
   gap: 10px;
+}
+.mid-tab {
+  width: 400px;
+  height: 62px;
+  color: #888888;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  border-bottom: #888888 solid;
+}
+.start {
+  margin-left: 300px;
+  justify-content: flex-start;
+}
+.center {
+  justify-content: center;
+}
+.end {
+  justify-content: flex-end;
+}
+.mid-tab:hover {
+  color: blue;
+  border-bottom: blue solid;
+}
+.footer-section {
+  background-image: url(backgrounf.png);
+  width: 600px;
+  height: 150px;
+  border-radius: 20px;
+  background-size: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.footer-li {
+  font-size: 16px;
+  line-height: 50px;
+  color: grey;
+}
+.footer-li:hover {
+  color: white;
 }
