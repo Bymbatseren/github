@@ -284,12 +284,9 @@ header {
   height: 62px;
   color: #888888;
   display: flex;
-  align-items: center;
   margin-top: 100px;
-  border-bottom: #888888 solid;
 }
 .start {
-  margin-left: 300px;
   justify-content: flex-start;
 }
 .center {
@@ -382,8 +379,54 @@ header {
 .footer-li {
   font-size: 16px;
   line-height: 50px;
-  color: grey;
+  color: #888888;
 }
 .footer-li:hover {
   color: white;
+}
+.fa-facebook {
+  font-size: 40px;
+  color: transparent;
+  color: #fafafa;
+}
+
+.fa-facebook:hover {
+  color: blue;
+  background-clip: text;
+}
+.fa-twitter {
+  font-size: 40px;
+  color: transparent;
+  color: #fafafa;
+}
+
+.fa-twitter:hover {
+  color: rgb(29 161 242);
+  background-clip: text;
+}
+.cropped-image {
+  font-size: 40px;
+  background-color: white;
+  color: transparent;
+  background-clip: text;
+  background-repeat: no-repeat;
+  width: fit-content;
+  height: fit-content;
+}
+
+.cropped-image:hover {
+  background: linear-gradient(
+    rgb(252, 204, 99),
+    rgb(251, 173, 80),
+    rgb(205, 72, 107),
+    rgb(76, 104, 215)
+  );
+  background-clip: text;
+  background-repeat: no-repeat;
+}
+.fa-linkedin {
+  color: #fafafa;
+}
+.fa-linkedin:hover {
+  color: rgb(0, 119, 181);
 }
