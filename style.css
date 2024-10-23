@@ -1,6 +1,12 @@
 @media (max-width: 600px) {
-  .hero {
-    padding-left: 0;
+  .footer-container {
+    padding: 0;
+  }
+  .section {
+    width: 100%;
+  }
+  .header-div {
+    padding-left: 20vw;
   }
 }
 
@@ -12,6 +18,8 @@ header {
   margin: 0;
   padding: 0;
 }
+.material-symbols-outlined {
+}
 .body {
   font-family: sans-serif;
 }
@@ -21,13 +29,14 @@ header {
   background-size: 100%;
   background-position-y: 25%;
   height: 630px;
+  width: 100%;
 }
 .header {
   display: flex;
   justify-content: flex-start;
-  gap: 200px;
-  padding-top: 30px;
-  padding-left: 250px;
+  gap: 10%;
+  padding-top: 1%;
+  padding-left: 12%;
 }
 
 .menu-logo {
@@ -106,7 +115,7 @@ header {
 }
 .hero-img {
   background-image: url(./sonin.png);
-  width: 450px;
+  width: 40%;
   height: 450px;
   border-radius: 20px;
   background-color: aliceblue;
@@ -168,7 +177,7 @@ header {
   justify-content: center;
   gap: 30px;
   overflow-x: scroll;
-  width: 1400px;
+  width: 75%;
   position: absolute;
 }
 
@@ -349,8 +358,8 @@ header {
 
 .footer-section {
   background-image: url(backgrounf.png);
-  width: 600px;
-  height: 150px;
+  width: 150%;
+  height: 20%;
   border-radius: 20px;
   background-size: 100%;
   margin-top: 100px;
@@ -429,4 +438,16 @@ header {
 }
 .fa-linkedin:hover {
   color: rgb(0, 119, 181);
+}
+.fa-youtube-play {
+  color: white;
+}
+.fa-youtube-play:hover {
+  color: red;
+}
+.fa-soundcloud {
+  color: white;
+}
+.fa-soundcloud:hover {
+  color: #ff8800;
 }
